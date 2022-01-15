@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Basic Intensity Transformation Functions</title>
+</head>
+
+<body>
+
+<p><u><b>Basic Intensity Transformation Functions</b></u></p>
+<p>&nbsp;</p>
+<p><u><b>Photographic Negative</b></u></p>
+<p>This is the simplest intensity transformation. Given a grey level image in the range
+[0,1], a grey point (0) is turned into a white point (1) and vice-versa. This is
+denoted
+by f ' (x,y) = 1 - f(x,y) assuming f(x,y) is normalised into the range [0,1].</p>
+<p>i.e. for a 256 grey level image, f ' (x,y) = 1 - f(x,y)/256</p>
+
+<p>So, for a black and white pixel with value 70, the new value for the pixel
+will be 1-70/256 = 0.7265625.</p>
+
+<p>Don't forget this pixels value will be in the range [0,1], so we will need to
+multiply this back by 256.</p>
+
+<p>&nbsp;</p>
+
+<p><a href="images/BW%20Neg%20Alien%20Cake.jpg">
+<img border="2" src="images/BW%20Neg%20Alien%20Cake_small.jpg" xthumbnail-orig-image="images/BW Neg Alien Cake.jpg" width="100" height="59"></a></p>
+
+<p>&nbsp;</p>
+
+<p>As an aside, if no Black and White images are available, it is possible to
+convert a colour image by transforming it's RGB values as shown in this
+<a href="ConvertingColourToBW.html">link</a>.</p>
+<p>&nbsp;</p>
+
+<p>&nbsp;</p>
+
+</body>
+
+</html>
